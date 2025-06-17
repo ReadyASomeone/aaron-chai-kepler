@@ -7,6 +7,7 @@ nav {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     li {
         background-color: aliceblue;
@@ -81,4 +82,34 @@ ul {
     border: 3px solid rgb(76, 0, 255);
     border-radius: 12px;
     display: inline-block;
+}
+/*tablet styling*/
+@media (max-width: 1080px) {
+h1 {
+    padding: 10px;
+    margin: 25px;
+}
+ul {
+    padding: 0px;
+    background-color: aquamarine;
+}
+nav {
+    background-color: aquamarine;
+    margin: -20px;
+}
+}
+/*Mobile styling*/
+@media (max-width: 740px) {
+h2 {
+    font-size: 2.5em;
+    color: rgb(39, 39, 219);
+}
+p {
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
 }
